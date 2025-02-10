@@ -1,0 +1,6 @@
+.env
+service.json
+node_modules/
+*.local
+*.log
+*.env

@@ -1,0 +1,36 @@
+{
+  "name": "feed-service",
+  "version": "1.0.0",
+  "description": "Feed service for the minimalist platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "pm2 start src/server.js --name feed-service",
+    "dev": "nodemon src/server.js",
+    "stop": "pm2 stop feed-service",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "author": "Minimalist Institute",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "common-utils": "git+ssh://git@minimalist.github.com:minimalistinstitute/common-utils.git#main",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "helmet": "^7.1.0",
+    "uuid": "^11.0.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "pm2": "^5.4.2",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
