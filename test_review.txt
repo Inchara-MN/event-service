@@ -1,0 +1,55 @@
+//Add comment
+Method: POST
+
+url;-
+http://localhost:5007/v1/product/review/65a8f3b4a9e9f2c3b4c6d8a9
+{
+    "userId": "60c72b2f5f1b2c6d88f8b0e5",
+    "type": "product",
+	"username": "Girish",
+    "email": "rahul1@example.com",
+    "content": "This is an amazing product! Highly recommend it.",
+    "rating": 5
+}
+
+
+
+//View Comments for a product
+Method: GET
+
+url:-
+http://localhost:5007/v1/product/review/65a8f3b4a9e9f2c3b4c6d8a6
+
+
+
+
+
+
+// Add reply
+Method: POST
+
+url:-
+http://localhost:5007/v1/product/reply/67a9fb50b91a065e8d4b28e6
+
+raw data:- 
+
+{
+    "userId": "60c72b2f5f1b2c6d88f8b0e0",
+    "name": "Girish",
+    "email": "rahul1@example.com",
+    "message": "This is my reply to the comment."
+}
+
+
+// delete reply
+
+Method : DELETE
+
+url:-
+http://localhost:5007/v1/product/reply/67a9fb50b91a065e8d4b28e6
+
+
+{
+    "userId": "60c72b2f5f1b2c6d88f8b0e1"
+    
+}
